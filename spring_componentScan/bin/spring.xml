@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="
+           http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context-3.1.xsd">
+
+<context:annotation-config />
+	<context:component-scan
+		base-package="com.mahesh.model" />
+
+	<bean id="h1" class="com.mahesh.model.Home">
+		<property name="homenu" value="1298">
+		</property>
+	</bean>
+
+	<bean id="h2" class="com.mahesh.model.Home">
+		<property name="homenu" value="1908">
+		</property>
+	</bean>
+
+
+	<bean id="c1" class="com.mahesh.model.Car">
+		<property name="carName" value="Wagnor LXI" />
+		<property name="carmodelyear" value="2018" />
+	</bean>
+
+	<bean id="c2" class="com.mahesh.model.Car">
+		<property name="carName" value="Reault Duster" />
+		<property name="carmodelyear" value="2019" />
+	</bean>
+
+	
+
+</beans>           
